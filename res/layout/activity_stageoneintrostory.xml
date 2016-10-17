@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/stageoneintrotypeone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".StageOneIntroStoryActivity" >
+    
+    <ImageView
+        android:id="@+id/stage1_intro_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/nodesc"
+        android:src="@drawable/stage1_intro_1" />
+    
+    <ImageView
+        android:id="@+id/stage1_mainChar_1"
+        android:layout_width="280dp"
+        android:layout_height="420dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="500dp"
+        android:layout_marginTop="250dp"
+        android:contentDescription="@string/nodesc"
+        android:src="@drawable/maincharacter_left" />
+    
+    <ImageButton
+        android:id="@+id/stage1_next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1150dp"
+        android:layout_marginTop="650dp"
+        android:background="@drawable/next_btn"
+        android:contentDescription="@string/nodesc" />
+
+    <LinearLayout
+        android:id="@+id/stage1_textbubble1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/stage1_mainChar_1"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/textbubble"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/stage1_textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="@string/stage1_dialog_1"
+            android:textColor="#FF000000"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</RelativeLayout>

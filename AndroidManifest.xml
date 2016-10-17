@@ -1,0 +1,111 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ys.gmlrme"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/gmlicon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="LogoScreenActivity"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="StartScreenActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity android:name="StageSelectScreenActivity" >
+        </activity>
+        <activity android:name="StageOneIntroStoryActivityTypeOne" >
+        </activity>
+        <activity android:name="StageOneIntroStoryActivityTypeTwo" >
+        </activity>
+        <activity
+            android:name="StageOneIntroStoryActivityTypeRullet"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity android:name="StageOneIndiaActivityTypeOne" >
+        </activity>
+        <activity android:name="StageOneIndiaActivityTypeTwo" >
+        </activity>
+        <activity android:name="StageOneGreeceActivityOne" >
+        </activity>
+        <activity android:name="StageOneGreeceActivityTwo" >
+        </activity>
+        <activity android:name="StageOneGreeceActivityThree" >
+        </activity>
+        <activity android:name="StageOneFranceActivityOne" >
+        </activity>
+        <activity android:name="StageOneFranceActivityTwo" >
+        </activity>
+        <activity android:name="StageOneFranceActivityThree" >
+        </activity>
+        <activity android:name="StageOneLearnActivityOne" >
+        </activity>
+        <activity
+            android:name="StageOneLearnPopUpActivieyOne"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="StageOneLearnPopUpActivityTwo"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="StageOneLearnPopUpActivityThree"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="StageOneLearnPopUpActivityFour"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.google.zxing.client.android.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="QRQuestionActivity" >
+        </activity>
+        <activity
+            android:name="QRRightActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="QRWrongActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity android:name="QRCameraActivity" >
+        </activity>
+        <activity android:name="StageOneEndActivity" >
+        </activity>
+        <activity
+            android:name="StageSelectByPassActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+    </application>
+
+</manifest>

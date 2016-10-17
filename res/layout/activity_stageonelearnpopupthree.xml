@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1159dip"
+    android:layout_height="687dip"
+    android:layout_centerInParent="true"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context=".StageOneLearnPopUpActivityThree" >
+
+    <ImageView
+        android:id="@+id/stage1_learn_popup3_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="@string/nodesc"
+        android:src="@drawable/common_question_popup" />
+
+    <TextView
+        android:id="@+id/stage1_learn_popup3_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/stage_1_popup_3_question_1"
+        android:textColor="#000000"
+        android:textSize="40sp" />
+
+    <ImageButton
+        android:id="@+id/stage1_learn_popup3_next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1000dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/next_btn"
+        android:contentDescription="@string/nodesc" />
+
+    <ImageView
+        android:id="@+id/stage1_learn_popup3_mainchar"
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="400dp"
+        android:contentDescription="@string/nodesc"
+        android:src="@drawable/mother" />
+    
+    <ImageView
+        android:id="@+id/stage1_learn_popup3_material"
+        android:layout_width="400dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="200dp"
+        android:contentDescription="@string/nodesc"
+        android:src="@drawable/learn_2_1_pl" />
+    
+    <com.ys.gmlrme.PointLinkerView
+        android:id="@+id/stage1_learn_popup3_pointLinkerView"
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:layout_marginLeft="600dp"
+        android:layout_marginTop="200dp">
+        
+        
+    </com.ys.gmlrme.PointLinkerView>
+    
+     <RelativeLayout
+        android:id="@+id/stage1_learn_popup3_wrong_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/stage1_learn_popup3_wrong_bg_black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/nodesc"
+            android:src="@drawable/blackscreen" />
+
+        <ImageView
+            android:id="@+id/stage1_learn_popup3_wrong_bg"
+            android:layout_width="600dp"
+            android:layout_height="400dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="200dp"
+            android:contentDescription="@string/nodesc"
+            android:src="@drawable/wrong_bg" />
+
+        <ImageButton
+            android:id="@+id/stage1_learn_popup3_wrong_confirm_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/stage1_learn_popup3_wrong_bg"
+            android:layout_alignTop="@id/stage1_learn_popup3_wrong_bg"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/confirm_btn"
+            android:contentDescription="@string/nodesc" />
+    </RelativeLayout>
+    
+</RelativeLayout>

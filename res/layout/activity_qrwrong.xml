@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="800dip"
+    android:layout_height="600dip"
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    tools:context=".QRWrongActivity" >
+
+    <RelativeLayout
+        android:id="@+id/stage1_qr_wrong_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/stage1_qr_wrong_bg_black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/nodesc"
+            android:scaleType="fitXY"
+            android:src="@drawable/blackscreen" />
+
+        <ImageView
+            android:id="@+id/stage1_qr_wrong_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/nodesc"
+            android:src="@drawable/wrong_bg" />
+
+        <ImageButton
+            android:id="@+id/stage1_qr_wrong_confirm_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/stage1_qr_wrong_bg"
+            android:layout_alignTop="@id/stage1_qr_wrong_bg"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="500dp"
+            android:background="@drawable/confirm_btn"
+            android:contentDescription="@string/nodesc" />
+    </RelativeLayout>
+
+</RelativeLayout>

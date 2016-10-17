@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="800dip"
+    android:layout_height="600dip"
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    tools:context=".StageOneIntroStoryActivityTypeRullet" >
+
+    <ImageView
+        android:id="@+id/stage1_1_event_popup_rullet_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/nodesc"
+        android:scaleType="fitXY"
+        android:src="@drawable/stage1_rullet_bg" />
+
+    <RelativeLayout
+        android:id="@+id/stage1_1_event_popup_rullet_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/stage1_1_event_popup_rullet_pad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="36dp"
+            android:contentDescription="@string/nodesc"
+            android:scaleType="fitXY"
+            android:src="@drawable/stage1_rullet_pad" />
+
+        <ImageView
+            android:id="@+id/stage1_1_event_popup_rullet_ring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/nodesc"
+            android:scaleType="fitXY"
+            android:src="@drawable/stage1_rullet_ring" />
+
+        <ImageView
+            android:id="@+id/stage1_1_event_popup_rullet_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="170dp"
+            android:contentDescription="@string/nodesc"
+            android:scaleType="fitXY"
+            android:src="@drawable/stage1_rullet_btn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/stage1_1_event_popup_rullet_win_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:background="@drawable/blackscreen"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/stage1_1_event_popup_rullet_win"
+            android:layout_width="700dp"
+            android:layout_height="590dp"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/nodesc"
+            android:src="@drawable/stage1_rullet_win" />
+        
+        <ImageButton
+        	android:id="@+id/stage1_1_event_popup_rullet_win_next_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="600dp"
+	        android:layout_marginTop="500dp"
+	        android:background="@drawable/next_btn"
+	        android:contentDescription="@string/nodesc" />
+    </RelativeLayout>
+
+</RelativeLayout>

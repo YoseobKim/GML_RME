@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="800dip"
+    android:layout_height="600dip"
+    android:layout_centerInParent="true"
+    android:background="@color/bg"
+    tools:context=".StageSelectByPassActivity" >
+
+    <ImageButton
+        android:id="@+id/stage_select_bypass_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pass_intro"
+        android:contentDescription="@string/nodesc" />
+    <ImageButton
+        android:id="@+id/stage_select_bypass_india"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/stage_select_bypass_intro"
+        android:background="@drawable/pass_india"
+        android:contentDescription="@string/nodesc" />
+    
+    <ImageButton
+        android:id="@+id/stage_select_bypass_greece"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/stage_select_bypass_india"
+        android:background="@drawable/pass_greece"
+        android:contentDescription="@string/nodesc" />
+    
+    <ImageButton
+        android:id="@+id/stage_select_bypass_france"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/stage_select_bypass_greece"
+        android:background="@drawable/pass_france"
+        android:contentDescription="@string/nodesc" />
+
+    <ImageButton
+        android:id="@+id/stage_select_bypass_learn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stage_select_bypass_intro"
+        android:layout_toLeftOf="@+id/stage_select_bypass_india"
+        android:background="@drawable/pass_learn"
+        android:contentDescription="@string/nodesc" />
+    <ImageButton
+        android:id="@+id/stage_select_bypass_qrquestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stage_select_bypass_intro"
+        android:layout_toRightOf="@+id/stage_select_bypass_intro"
+        android:background="@drawable/pass_qrquestion"
+        android:contentDescription="@string/nodesc" />
+
+    <ImageButton
+        android:id="@+id/stage_select_bypass_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/stage_select_bypass_learn"
+        android:layout_toRightOf="@+id/stage_select_bypass_india"
+        android:background="@drawable/pass_end"
+        android:contentDescription="@string/nodesc" />
+
+</RelativeLayout>

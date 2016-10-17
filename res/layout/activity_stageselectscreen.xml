@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/stageselectscreenLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".StageSelectScreenActivity" >
+    <ImageView
+        android:id="@+id/stageSelBG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/nodesc"
+        android:src="@drawable/stage_select_img"
+        android:alpha="0.5" />
+    <ImageButton
+        android:id="@+id/stage1_Btn"
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/stage1_btn"
+        android:contentDescription="@string/stage1_btn_desc" />
+
+    <ImageButton
+        android:id="@+id/stage2_Btn"
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/stage2_btn"
+        android:contentDescription="@string/stage2_btn_desc"
+        android:layout_toRightOf="@id/stage1_Btn"
+        android:layout_alignTop="@id/stage1_Btn"
+        android:layout_marginLeft="50dp"  />
+   <ImageButton
+        android:id="@+id/stage_lock_Btn"
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/stage_lock_btn"
+        android:contentDescription="@string/stage_lock_btn_desc"
+        android:layout_toRightOf="@id/stage2_Btn"
+        android:layout_alignTop="@id/stage2_Btn"
+        android:layout_marginLeft="50dp"/>
+</RelativeLayout>

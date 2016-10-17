@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/stage1francetypethree"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StageOneFranceActivityThree" >
+
+    <ImageView
+        android:id="@+id/stage1_france_typethree_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/nodesc"
+        android:scaleType="fitXY"
+        android:src="@drawable/france2" />
+
+    <ImageView
+        android:id="@+id/stage1_france_typethree_bg2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/nodesc"
+        android:scaleType="fitXY"
+        android:src="@drawable/airport"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/stage1_france_blackscreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/nodesc"
+        android:scaleType="fitXY"
+        android:src="@drawable/blackscreen" />
+
+    <ImageView
+        android:id="@+id/stage1_france3_mainChar_1"
+        android:layout_width="580dp"
+        android:layout_height="420dp"
+        android:layout_marginLeft="600dp"
+        android:layout_marginTop="250dp"
+        android:contentDescription="@string/nodesc"
+        android:scaleType="fitXY"
+        android:src="@drawable/family" />
+
+    <LinearLayout
+        android:id="@+id/stage1_france3_textbubble1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stage1_france3_mainChar_1"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/textbubble"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/stage1_france3_textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="@string/stage1_france_dialog_1"
+            android:textColor="#FF000000"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/stage1_france3_guide_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/stage1_france3_guide_Char"
+            android:layout_width="250dp"
+            android:layout_height="420dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="250dp"
+            android:contentDescription="@string/nodesc"
+            android:scaleType="fitXY"
+            android:src="@drawable/guide" />
+
+        <LinearLayout
+            android:id="@+id/stage1_france3_guide_textbubble1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/stage1_france3_guide_Char"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/textbubble"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <TextView
+                android:id="@+id/stage1_france3_guide_textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="@string/stage1_france_dialog_5"
+                android:textColor="#FF000000"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/stage1_france3_typetwo_next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1150dp"
+        android:layout_marginTop="650dp"
+        android:background="@drawable/next_btn"
+        android:contentDescription="@string/nodesc" />
+
+</RelativeLayout>

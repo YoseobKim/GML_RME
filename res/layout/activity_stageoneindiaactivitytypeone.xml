@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/stageoneindiatypeone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".StageOneIndiaActivityTypeOne" >
+	
+    <ImageView
+        android:id="@+id/stage1_india_typeone_flag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/nodesc"
+        android:scaleType="fitXY"
+        android:src="@drawable/stage1_india_typeone" />
+    
+   <ImageButton
+        android:id="@+id/stage1_india_typeone_next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1150dp"
+        android:layout_marginTop="650dp"
+        android:background="@drawable/next_btn"
+        android:contentDescription="@string/nodesc" />
+    
+</RelativeLayout>
